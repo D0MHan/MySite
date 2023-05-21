@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "GmarketBold";
+    src: url("../font/GmarketSansTTFBold.ttf") format("truetype");
+  }
+@font-face {
+    font-family: "GmarketMedium";
+    src: url("../font/GmarketSansTTFMedium.ttf") format("truetype");
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "GmarketMedium";
+}
+body {
+    background-image: url(/images/back.jpg);
+    background-size: cover;
+  }
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 45px 60px;
+    background-color: #212122;
+    font-size: 24px;
+    font-weight: bold;
+    /* border-bottom: 1px solid #e0e3fd; */
+    z-index: 10;
+    height: 120px;
+    font-family: "GmarketBold";
+  }
+  #header a {
+    color: #6a75ca;
+    text-decoration: none;
+  }
+  #header h1 {
+    font-size:2.3rem;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: right;
+    float: right;
+  }
+  .list-link {
+    margin-left: 70px;
+  }
+  .list-link:hover {
+    color: black;
+    border-bottom: 2px solid black;
+  }
+  .bar-bg {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #dfe2f7;
+  }
+  .bar-ing {
+    position: absolute;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #6a75ca;
+  }
+.wrapper{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40 auto;
+}
+.wrapper h1 {
+    margin: 0 auto;
+    font-size: 48px;
+    font-weight: bold;
+}
+.poster {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
+    /* background-color: orange; */
+    padding: 40px 20px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.movie {
+    width: 200px;
+    height: 266px;
+    margin: 4px;
+    background-color: #555;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: transform 0.1s, background-color 0.6s;
+}
+.movie .image {
+   width: 98%;
+   height: 98%;
+   background-size: cover;
+   background-position: center;
+}
+.movie:hover {
+    border-color: orange;
+    transform: scale(1.3);
+    z-index: 1;
+}
+.movie:nth-child(1) .image {background-image: url("../images/어벤져스.jpg");
+}
+.movie:nth-child(2) .image {background-image: url("../images/블랙팬서.jpg");
+}
+.movie:nth-child(3) .image {background-image: url("../images/킹스맨.jpg");
+}
+.movie:nth-child(4) .image {background-image: url("../images/올빼미.jpg");
+}
+.movie:nth-child(5) .image {background-image: url("../images/어바웃타임.jpg");
+}
+.movie:nth-child(6) .image {background-image: url("../images/공조.jpg");
+}
+.movie:nth-child(7) .image {background-image: url("../images/미션임파서블.jpg");
+}
+.movie:nth-child(8) .image {background-image: url("../images/인턴.jpg");
+}
+.movie:nth-child(9) .image {background-image: url("../images/국제시장.jpg");
+}
+.movie:nth-child(10) .image {background-image: url("../images/극한직업.jpg");
+}
+.movie:nth-child(11) .image {background-image: url("../images/겨울왕국.jpg");
+}
+.movie:nth-child(12) .image {background-image: url("../images/이프온리.jpg");
+}
+.movie:nth-child(13) .image {background-image: url("../images/주토피아.jpg");
+}
+.movie:nth-child(14) .image {background-image: url("../images/타이타닉.jpg");
+}
+.movie:nth-child(15) .image {background-image: url("../images/토이스토리4.jpg");
+}
+.movie:nth-child(16) .image {background-image: url("../images/장난스런키스.jpg");
+}
+.movie:nth-child(17) .image {background-image: url("../images/업.jpg");
+}
+.movie:nth-child(18) .image {background-image: url("../images/암수살인.jpg");
+}
+.movie:nth-child(19) .image {background-image: url("../images/쇼생크탈출.jpg");
+}
+.movie:nth-child(20) .image {background-image: url("../images/미스터빈.jpg");
+}
+.movie:nth-child(21) .image {background-image: url("../images/주토피아.jpg");
+}
+.movie:nth-child(22) .image {background-image: url("../images/세얼간이.jpg");
+}
+.movie:nth-child(23) .image {background-image: url("../images/라이브오브파이.jpg");
+}
+.movie:nth-child(24) .image {background-image: url("../images/겟아웃.jpg");
+}
+.movie:nth-child(25) .image {background-image: url("../images/미비포유.jpg");
+}
+.movie:nth-child(26) .image {background-image: url("../images/숨박꼭질.jpg");
+}
+.movie:nth-child(27) .image {background-image: url("../images/어스.jpg");
+}
+.movie:nth-child(28) .image {background-image: url("../images/이프온리.jpg");
+}
+.movie:nth-child(29) .image {background-image: url("../images/컨저링.jpg");
+}
+.movie:nth-child(30) .image {background-image: url("../images/클로젯.jpg");
+}

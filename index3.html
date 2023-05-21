@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘 할일</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <header id="header">
+        <h1>
+          <a href="index3.html">To-Do List</a>
+        </h1>
+        <nav>
+          <ul class="nav-list">
+            <a href="index.html">Home</a>
+          </ul>
+        </nav>
+        <div class="bar-bg">
+            <span class="bar-ing"></span>
+          </div>
+      </header>
+    <h4 id="title">TO-DO LIST, 오늘의 할 일</h4>
+    <div class="App">
+        <div id="days">
+            <div id="today"></div>
+            <div id="monthYear">
+                <div id="month"></div>
+                <div id="year"></div>
+            </div>
+            <div id="tue"></div>
+        </div>
+    </div>
+    <script>
+        const now = new Date();
+        const today = document.getElementById("today");
+        today.innerHTML = now.getDate();
+        const month = document.getElementById("month");
+        const year = document.getElementById("year");
+        year.innerHTML = now.getFullYear();
+        const tue = document.getElementById('tue');
+
+        switch (now.getDay()) {
+            case 0: tue.innerHTML = "일요일"
+                break;
+            case 1: tue.innerHTML = "월요일"
+                break;
+            case 2: tue.innerHTML = "화요일"
+                break;
+            case 3: tue.innerHTML = "수요일"
+                break;
+            case 4: tue.innerHTML = "목요일"
+                break;
+            case 5: tue.innerHTML = "금요일"
+                break;
+            case 6: tue.innerHTML = "토요일"
+                break;
+        }
+
+        switch (now.getMonth()) {
+            case 0: month.innerHTML = "JAN"
+                break;
+            case 1: month.innerHTML = "FEB"
+                break;
+            case 2: month.innerHTML = "MAR"
+                break;
+            case 3: month.innerHTML = "APR"
+                break;
+            case 4: month.innerHTML = "MAY"
+                break;
+            case 5: month.innerHTML = "JUN"
+                break;
+            case 6: month.innerHTML = "JUL"
+                break;
+            case 7: month.innerHTML = "AUG"
+                break;
+            case 8: month.innerHTML = "SEP"
+                break;
+            case 9: month.innerHTML = "OCT"
+                break;
+            case 10: month.innerHTML = "NOV"
+                break;
+            case 11: month.innerHTML = "DEC"
+                break;
+        }
+       
+
+    </script>
+    <script defer src="js/script3.js" type="module"></script>
+</body>
+</html>
